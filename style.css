@@ -1,0 +1,111 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  animation: load 0.34s ease;
+}
+
+body {
+  overflow: auto;
+  background-image: linear-gradient(90deg, #449dd5, black, #449dd5);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: gradient 10s ease infinite;
+}
+
+#c {
+  font-size: 50px
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80px;
+  color: white;
+  animation: wobble 15s ease infinite;
+  display: inline-block;
+}
+
+.controls {
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color:white;
+  display: inline-block;
+}
+
+p {
+    font-size: 40px;
+   font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.playpart{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.play-area {
+  width: 50% !important;
+}
+
+.btn1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn1:active {
+ animation: clicked 0.2s ease
+}
+
+@keyframes clicked {
+  0% {
+    background-color: white;
+    color: black;
+  };
+  100% {
+    color: white;
+    background-color: black;
+  }
+}
+
+/* .menu {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+ */
